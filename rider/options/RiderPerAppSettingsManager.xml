@@ -1,0 +1,12 @@
+<application>
+  <component name="RiderPerAppSettingsManager">
+    <option name="enabledBlacklistToolWindowsId">
+      <set>
+        <option value="Dynamic Program Analysis" />
+        <option value="TODO" />
+        <option value="dotTrace Profiler" />
+      </set>
+    </option>
+    <option name="toolWindowsPerApp" value="true" />
+  </component>
+</application>

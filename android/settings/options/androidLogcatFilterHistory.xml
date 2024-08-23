@@ -1,0 +1,29 @@
+<application>
+  <component name="AndroidLogcatFilterHistory">
+    <option name="mostRecentlyUsed" value="System.out" />
+    <option name="nonFavorites">
+      <list>
+        <option value="package:com.example.jeepni" />
+        <option value="System.out" />
+        <option value="level:info JEEPNI" />
+        <option value="level:info JEEPNI_ALARM" />
+        <option value="level:info JE" />
+        <option value="level:info KYLE_STAT" />
+        <option value="level:info STAT" />
+        <option value="KYLE" />
+        <option value="package:mine " />
+        <option value="level:info JEEPNI_SOCKET" />
+        <option value="new_count" />
+        <option value="MOO" />
+        <option value="level:error " />
+        <option value="level:info new_count" />
+        <option value="level:debug SOCKET" />
+        <option value="level:info connection" />
+        <option value="level:info location_update" />
+        <option value="level:info newLocation" />
+        <option value="level:info send_location" />
+        <option value="level:info" />
+      </list>
+    </option>
+  </component>
+</application>

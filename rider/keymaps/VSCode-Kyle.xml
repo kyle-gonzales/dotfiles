@@ -1,0 +1,13 @@
+<keymap version="1" name="VSCode-Kyle" parent="VSCode">
+  <action id="FileChooser.NewFile" />
+  <action id="NewElement">
+    <keyboard-shortcut first-keystroke="ctrl n" />
+  </action>
+  <action id="NewElementSamePlace">
+    <keyboard-shortcut first-keystroke="shift ctrl n" />
+  </action>
+  <action id="OpenInRightSplit">
+    <mouse-shortcut keystroke="alt button1 doubleClick" />
+  </action>
+  <action id="SplitVertically" />
+</keymap>

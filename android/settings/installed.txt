@@ -1,0 +1,4 @@
+com.genuitec.codetogether
+com.intellij.marketplace
+com.mallowigi.idea
+com.intellij.plugins.vscodekeymap

@@ -1,0 +1,3 @@
+com.mallowigi.idea
+com.intellij.resharper.StructuredLogging
+com.intellij.resharper.azure

@@ -1,0 +1,48 @@
+<application>
+  <component name="ProjectManager">
+    <defaultProject>
+      <component name="Encoding" addBOMForNewFiles="with BOM under Windows, with no BOM otherwise" />
+      <component name="ProjectInspectionProfilesVisibleTreeState">
+        <entry key="Project Default">
+          <profile-state>
+            <selected-state>
+              <State>
+                <id>User defined</id>
+              </State>
+            </selected-state>
+          </profile-state>
+        </entry>
+      </component>
+      <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "settings.editor.selected.configurable": "preferences.keymap"
+  }
+}]]></component>
+      <component name="WindowStateProjectService">
+        <state x="502" y="102" key="Rider.NewProjectDialog.Size" timestamp="1721756875303">
+          <screen x="0" y="0" width="1920" height="1032" />
+        </state>
+        <state x="502" y="102" key="Rider.NewProjectDialog.Size/0.0.1920.1032/-1080.-188.1080.1920" timestamp="1721756875303" />
+        <state x="461" y="81" key="SettingsEditor" timestamp="1721756800564">
+          <screen x="0" y="0" width="1920" height="1032" />
+        </state>
+        <state x="461" y="81" key="SettingsEditor/0.0.1920.1032/-1080.-188.1080.1920" timestamp="1721756800564" />
+      </component>
+      <component name="masterDetails">
+        <states>
+          <state key="ScopeChooserConfigurable.UI">
+            <settings>
+              <splitter-proportions>
+                <option name="proportions">
+                  <list>
+                    <option value="0.2" />
+                  </list>
+                </option>
+              </splitter-proportions>
+            </settings>
+          </state>
+        </states>
+      </component>
+    </defaultProject>
+  </component>
+</application>

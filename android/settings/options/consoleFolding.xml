@@ -1,0 +1,13 @@
+<application>
+  <component name="ConsoleFoldingSettings">
+    <option name="addedPositive">
+      <list>
+        <option value="D/EGL_emulation: app_time_stats: avg=499.96ms min=10.66ms max=989.26ms count=2" />
+        <option value="D/EGL_emulation: app_time_stats: avg=500.44ms min=15.59ms max=985.29ms count=2" />
+        <option value="D/EGL_emulation: app_time_stats: avg=661.98ms min=12.74ms max=986.98ms count=3" />
+        <option value="I/Counters: exceeded sample count in FrameTime" />
+        <option value="D/EGL_emulation" />
+      </list>
+    </option>
+  </component>
+</application>

@@ -1,0 +1,45 @@
+<application>
+  <component name="ProjectManager">
+    <defaultProject>
+      <component name="Encoding">
+        <file url="PROJECT" charset="UTF-8" />
+      </component>
+      <component name="InspectionProjectProfileManager">
+        <option name="PROJECT_PROFILE" value="Default" />
+        <option name="USE_PROJECT_PROFILE" value="false" />
+        <version value="1.0" />
+      </component>
+      <component name="ProjectDictionaryState">
+        <dictionary name="Kyle" />
+      </component>
+      <component name="ProjectInspectionProfilesVisibleTreeState">
+        <entry key="Project Default">
+          <profile-state>
+            <expanded-state>
+              <State />
+            </expanded-state>
+            <selected-state>
+              <State>
+                <id>Android</id>
+              </State>
+            </selected-state>
+          </profile-state>
+        </entry>
+      </component>
+      <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "project.structure.last.edited": "SDK Location",
+    "project.structure.proportion": "0.17",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.sourceCode"
+  }
+}]]></component>
+      <component name="WindowStateProjectService">
+        <state x="491" y="155" key="SettingsEditor" timestamp="1691777115777">
+          <screen x="0" y="0" width="1920" height="1050" />
+        </state>
+        <state x="491" y="155" key="SettingsEditor/-1080.-169.1080.1890/0.0.1920.1050" timestamp="1691777115777" />
+      </component>
+    </defaultProject>
+  </component>
+</application>

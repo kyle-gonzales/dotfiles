@@ -1,0 +1,15 @@
+<application>
+  <component name="LafManager">
+    <laf themeId="SynthWave '84 Compact" />
+    <lafs-to-previous-schemes>
+      <laf-to-scheme laf="Dracula Compact" scheme="Light Owl (Material)" />
+      <laf-to-scheme laf="Material Oceanic" scheme="_@user_Material Oceanic" />
+      <laf-to-scheme laf="Material Palenight" scheme="_@user_Material Palenight" />
+      <laf-to-scheme laf="Moonlight (Material)" scheme="_@user_Moonlight (Material)" />
+      <laf-to-scheme laf="Rider Day" scheme="_@user_Rider Light" />
+      <laf-to-scheme laf="SynthWave '84 (Material)" scheme="_@user_SynthWave '84 (Material)" />
+      <laf-to-scheme laf="SynthWave '84 Contrast" scheme="SynthWave '84 (Material)" />
+      <laf-to-scheme laf="Visual Assist Night" scheme="_@user_Visual Assist Dark" />
+    </lafs-to-previous-schemes>
+  </component>
+</application>

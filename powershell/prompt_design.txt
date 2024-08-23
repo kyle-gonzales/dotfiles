@@ -1,0 +1,15 @@
+ Kyle on   ~/Documents/Projects/GrowthPortal/FSGrowthPortal   create-models (+2 ?1 ~1)
+
+- main theme: amro
+- git-files: onehalf.minimal
+- branch_icon: "\ue725"
+- add extra space on bottom: newline
+
+other good themes:
+
+catppuccin_frappe - nice colors
+material - doesn't show full folders
+onehalf.minimal - 
+powerlevel10k_lean
+
+

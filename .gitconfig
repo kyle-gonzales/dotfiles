@@ -1,0 +1,26 @@
+[user]
+	name = Kyle Angelo Gonzales
+	email = kyleangelog@gmail.com
+[init]
+	defaultBranch = main
+[core]
+	editor = code --wait
+	#pager = less -F -X
+[alias]
+	ss = status -s
+
+# set vscode as difftool
+[diff]
+	tool = vscode-diff
+[difftool]
+	prompt = false
+[difftool "vscode-diff"]
+	cmd = code --wait --diff $LOCAL $REMOTE
+
+# set vscode as mergetool
+[merge]
+	tool = vscode-merge
+[mergetool]
+	keepBackup = false
+[mergetool "vscode-merge"]
+	cmd =code --wait $MERGED

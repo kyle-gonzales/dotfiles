@@ -1,0 +1,252 @@
+{
+  // WORKBENCH SETTING
+  "workbench.colorTheme": "SynthWave '84",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.editor.enablePreview": true,
+  "workbench.editorAssociations": {
+    "*.pdf": "latex-workshop-pdf-hook"
+  },
+  "workbench.tree.indent": 6,
+  "workbench.tree.renderIndentGuides": "none",
+  "bookmarks.gutterIconFillColor": "none",
+  // "bookmarks.gutterIconBorderColor": "157EFB",
+  "workbench.colorCustomizations": {
+    "bookmarks.lineBackground": "#0077ff2a",
+    "bookmarks.overviewRuler": "#157EFB88"
+  },
+  "git.openRepositoryInParentFolders": "always",
+
+  // WINDOW SETTINGS
+  "window.commandCenter": true,
+  "window.menuBarVisibility": "compact",
+
+  // TEXT EDITOR SETTINGS
+  "editor.suggestSelection": "first",
+  "editor.formatOnSave": true,
+  "editor.acceptSuggestionOnEnter": "smart",
+  "editor.fontSize": 14.5,
+  "editor.wordWrap": "on",
+  "editor.fontLigatures": true,
+  "editor.fontFamily": "FiraCode Nerd Font, Input Mono",
+  "editor.fontWeight": 400,
+  "editor.guides.bracketPairs": true,
+  "editor.guides.bracketPairsHorizontal": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.linkedEditing": true,
+
+  "diffEditor.wordWrap": "on",
+  "diffEditor.experimental.showMoves": true,
+
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+
+  // TERMINAL SETTINGS
+  "terminal.integrated.defaultProfile.windows": "Windows PowerShell",
+  "terminal.integrated.fontFamily": "MesloLGS Nerd Font, FiraCode Nerd Font, Input Mono",
+  "terminal.integrated.fontSize": 13,
+  "terminal.integrated.fontWeight": "300",
+  "terminal.integrated.env.windows": {},
+  "terminal.integrated.suggest.enabled": true,
+
+  // EXPLORER SETTINGS
+  "explorer.confirmDragAndDrop": false,
+  "explorer.confirmDelete": false,
+
+  "files.exclude": {
+    "**/.classpath": true,
+    "**/.project": true,
+    "**/.settings": true,
+    "**/.factorypath": true
+  },
+  "files.autoSave": "afterDelay",
+  "files.trimTrailingWhitespace": true,
+
+  // LANGUAGE SPECIFIC
+
+  "redhat.telemetry.enabled": true,
+  "java.saveActions.organizeImports": true,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+
+  "python.languageServer": "Pylance",
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter",
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "explicit"
+    }
+  },
+  "isort.args": ["--profile", "black"],
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2
+  },
+  "[typescript]": {
+    "editor.tabSize": 2
+  },
+  "[html]": {
+    "editor.suggest.insertMode": "replace",
+    "editor.tabSize": 2
+  },
+  "[markdown]": {
+    "files.trimTrailingWhitespace": false
+  },
+
+  // CODE RUNNER
+
+  "code-runner.runInTerminal": true,
+  "code-runner.executorMapByGlob": {
+    "pom.xml": "cd $dir && mvn clean package"
+  },
+  "code-runner.executorMapByFileExtension": {
+    ".vb": "cd $dir && vbc /nologo $fileName && $dir$fileNameWithoutExt",
+    ".vbs": "cscript //Nologo",
+    ".scala": "scala",
+    ".jl": "julia",
+    ".cr": "crystal",
+    ".ml": "ocaml",
+    ".zig": "zig run",
+    ".exs": "elixir",
+    ".hx": "haxe --cwd $dirWithoutTrailingSlash --run $fileNameWithoutExt",
+    ".rkt": "racket",
+    ".scm": "csi -script",
+    ".ahk": "autohotkey",
+    ".au3": "autoit3",
+    ".kt": "cd $dir && kotlinc $fileName -include-runtime -d $fileNameWithoutExt.jar && java -jar $fileNameWithoutExt.jar",
+    ".kts": "kotlinc -script",
+    ".dart": "dart",
+    ".pas": "cd $dir && fpc $fileName && $dir$fileNameWithoutExt",
+    ".pp": "cd $dir && fpc $fileName && $dir$fileNameWithoutExt",
+    ".d": "cd $dir && dmd $fileName && $dir$fileNameWithoutExt",
+    ".hs": "runhaskell",
+    ".nim": "nim compile --verbosity:0 --hints:off --run",
+    ".csproj": "dotnet run --project",
+    ".fsproj": "dotnet run --project",
+    ".lisp": "sbcl --script",
+    ".kit": "kitc --run",
+    ".v": "v run",
+    ".vsh": "v run",
+    ".sass": "sass --style expanded",
+    ".cu": "cd $dir && nvcc $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    ".ring": "ring",
+    ".sml": "cd $dir && sml $fileName"
+  },
+  "code-runner.executorMap": {
+    "javascript": "node",
+    "java": "cd $dir && javac $fileName && java $fileNameWithoutExt",
+    "c": "cd $dir && gcc $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "zig": "zig run",
+    "cpp": "cd $dir && g++ $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "objective-c": "cd $dir && gcc -framework Cocoa $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "php": "php",
+    "python": "python -u",
+    "perl": "perl",
+    "perl6": "perl6",
+    "ruby": "ruby",
+    "go": "go run",
+    "lua": "lua",
+    "groovy": "groovy",
+    "powershell": "powershell -ExecutionPolicy ByPass -File",
+    "bat": "cmd /c",
+    "shellscript": "bash",
+    "fsharp": "fsi",
+    "csharp": "dotnet run",
+    "vbscript": "cscript //Nologo",
+    "typescript": "ts-node",
+    "coffeescript": "coffee",
+    "scala": "scala",
+    "swift": "swift",
+    "julia": "julia",
+    "crystal": "crystal",
+    "ocaml": "ocaml",
+    "r": "Rscript",
+    "applescript": "osascript",
+    "clojure": "lein exec",
+    "haxe": "haxe --cwd $dirWithoutTrailingSlash --run $fileNameWithoutExt",
+    "rust": "cd $dir && rustc $fileName && $dir$fileNameWithoutExt",
+    "racket": "racket",
+    "scheme": "csi -script",
+    "ahk": "autohotkey",
+    "autoit": "autoit3",
+    "dart": "dart",
+    "pascal": "cd $dir && fpc $fileName && $dir$fileNameWithoutExt",
+    "d": "cd $dir && dmd $fileName && $dir$fileNameWithoutExt",
+    "haskell": "runghc",
+    "nim": "nim compile --verbosity:0 --hints:off --run",
+    "lisp": "sbcl --script",
+    "kit": "kitc --run",
+    "v": "v run",
+    "sass": "sass --style expanded",
+    "scss": "scss --style expanded",
+    "less": "cd $dir && lessc $fileName $fileNameWithoutExt.css",
+    "FortranFreeForm": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "fortran-modern": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "fortran_fixed-form": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "fortran": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "sml": "cd $dir && sml $fileName"
+  },
+  "gitlens.graph.minimap.enabled": true,
+  "gitlens.graph.dimMergeCommits": true,
+  "gitlens.graph.showRemoteNames": true,
+  "gitlens.graph.minimap.additionalTypes": [
+    "localBranches",
+    "stashes",
+    "remoteBranches"
+  ],
+  "indentRainbow.excludedLanguages": [
+    "javascript",
+    "javascriptreact",
+    "json",
+    "jsonc",
+    "typescript",
+    "typescriptreact",
+    "plaintext",
+    "html",
+    "css",
+    "gitconfig",
+    "java"
+  ],
+  "colorize.languages": ["javascript", "css", "html"],
+
+  // CSPELL - FOR CODE SPELLING
+  "cSpell.ignorePaths": [
+    "package-lock.json",
+    "node_modules",
+    "vscode-extension",
+    ".git/objects",
+    ".vscode",
+    ".vscode-insiders",
+    "%APPDATA%\\Code\\User\\settings.json"
+  ],
+  "cSpell.diagnosticLevel": "Hint",
+
+  // CODESNAP - FOR CODE SCREENSHOTS
+  "codesnap.containerPadding": "1em",
+  "codesnap.transparentBackground": true,
+
+  // MORE SETTINGS
+  "emmet.includeLanguages": {
+    "vue-html": "html",
+    "javascript": "javascriptreact",
+    "typescript": "typescriptreact"
+  },
+  "security.workspace.trust.untrustedFiles": "open",
+  "advancedNewFile.exclude": {
+    "node_modules": true,
+    "node_modules_electron": true,
+    "dev": true,
+    "dist": true
+  },
+  "advancedNewFile.showInformationMessages": true,
+  "advancedNewFile.convenienceOptions": ["last", "current", "root"],
+  "terminal.integrated.commandsToSkipShell": ["language-julia.interrupt"],
+  "julia.symbolCacheDownload": true,
+  "julia.enableTelemetry": false,
+  "diffEditor.maxComputationTime": 0,
+  "diffEditor.hideUnchangedRegions.enabled": true,
+  "gitlens.rebaseEditor.ordering": "asc",
+  "console-ninja.featureSet": "Community",
+  "diffEditor.ignoreTrimWhitespace": false,
+  "workbench.editor.alwaysShowEditorActions": true,
+  "terminal.integrated.env.linux": {},
+  "terminal.integrated.defaultProfile.linux": "zsh"
+}

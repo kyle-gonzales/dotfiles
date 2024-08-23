@@ -1,0 +1,9 @@
+<application>
+  <component name="UISettings">
+    <option name="compactTreeIndents" value="true" />
+    <option name="MAX_LOOKUP_WIDTH2" value="1000" />
+    <option name="OPEN_IN_PREVIEW_TAB_IF_POSSIBLE" value="true" />
+    <option name="SEPARATE_MAIN_MENU" value="true" />
+    <option name="UI_DENSITY" value="COMPACT" />
+  </component>
+</application>
