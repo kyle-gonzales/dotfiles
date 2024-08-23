@@ -13,6 +13,10 @@ f"""
     <p:turquoise>{{ .BranchStatus }}</>
 {{ end }}
 
+{{ if (gt .StashCount 0)}}
+     <p:pink> *{{ .StashCount }}</>
+{{ end }}
+
 {{ if .Staging.Changed }}
      <p:green>{{ .Staging.String }}</>
 {{ end }}
@@ -22,5 +26,3 @@ f"""
 {{ end }}
 
 """
-
-0

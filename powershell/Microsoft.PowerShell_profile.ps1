@@ -7,7 +7,7 @@ Set-Alias tt tree
 #oh-my-posh init pwsh | Invoke-Expression
 
 # custom theme
-oh-my-posh init pwsh --config 'C:/Users/Kyle/Documents/dotfiles/powershel/mortem.omp.json' | Invoke-Expression
+oh-my-posh init pwsh --config 'C:/Users/Kyle/Documents/dotfiles/powershell/mortem.omp.json' | Invoke-Expression
 
 # remote theme
 # oh-my-posh init pwsh --config 'https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/onehalf.minimal.omp.json' | Invoke-Expression
