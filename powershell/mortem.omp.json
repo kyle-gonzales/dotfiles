@@ -1,76 +1,85 @@
 {
   "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
   "palette": {
-    "green": "#45F1C2",
-    "red": "#CD4277",
-    "magenta": "#BC93FF",
-    "turquoise": "#14A5AE",
     "blue": "#0CA0D8",
-    "orange": "#CD5E42",
+    "blue_frappe": "#89B4FA",
     "dark_blue": "#007ACC",
-    "pink": "#F5C2E7",
+    "green": "#45F1C2",
     "lavender": "#B4BEFE",
-    "blue_frappe": "#89B4FA"
+    "magenta": "#BC93FF",
+    "orange": "#CD5E42",
+    "pink": "#F5C2E7",
+    "red": "#CD4277",
+    "turquoise": "#14A5AE"
   },
   "blocks": [
     {
+      "type": "prompt",
       "alignment": "left",
-      "newline": true,
       "segments": [
         {
-          "foreground": "p:green",
           "properties": {
+            "cache_duration": "none",
             "time_format": "01/02 03:04PM"
           },
-          "style": "diamond",
           "template": "[{{ .CurrentDate | date .Format }}]",
-          "type": "time"
+          "foreground": "p:green",
+          "type": "time",
+          "style": "diamond"
         },
         {
-          "foreground": "p:blue",
           "properties": {
+            "cache_duration": "none",
             "folder_separator_icon": "/",
             "style": "full"
           },
-          "style": "plain",
           "template": " \ueaf7 {{ path .Path .Location }} ",
-          "type": "path"
+          "foreground": "p:blue",
+          "type": "path",
+          "style": "plain"
         },
         {
           "properties": {
             "branch_icon": "\ue725 ",
-            "fetch_upstream_icon": true,
-            "fetch_status": true,
+            "cache_duration": "none",
             "fetch_stash_count": true,
+            "fetch_status": true,
+            "fetch_upstream_icon": true,
             "fetch_worktree_count": true
           },
-          "style": "plain",
-          "template": "{{ if or (.Working.Changed) (.Staging.Changed) (gt .StashCount 0) }}<p:magenta>{{ .UpstreamIcon }}{{ .HEAD }}</>{{ else }}<p:green>{{ .UpstreamIcon }}{{ .HEAD }}</>{{ end }}{{ if (gt .Ahead 0)}}<p:turquoise> {{ .BranchStatus }}</>{{ end }}{{ if (gt .Behind 0)}}<p:turquoise> {{ .BranchStatus }}</>{{ end }}{{ if (gt .StashCount 0)}}<p:pink> *{{ .StashCount }}</>{{ end }}{{ if .Staging.Changed }} <p:green>{{ .Staging.String }}</>{{ end }}{{ if .Working.Changed }} <p:red>{{ .Working.String }}</>{{ end }}",
-          "type": "git"
+          "template": "{{ if or (.Working.Changed) (.Staging.Changed) (gt .StashCount 0) }}<p:magenta>{{ .UpstreamIcon }} {{ .HEAD }}</>{{ else }}<p:green>{{ .UpstreamIcon }} {{ .HEAD }}</>{{ end }}{{ if (gt .Ahead 0)}}<p:turquoise> {{ .BranchStatus }}</>{{ end }}{{ if (gt .Behind 0)}}<p:turquoise> {{ .BranchStatus }}</>{{ end }}{{ if (gt .StashCount 0)}}<p:pink> *{{ .StashCount }}</>{{ end }}{{ if .Staging.Changed }} <p:green>{{ .Staging.String }}</>{{ end }}{{ if .Working.Changed }} <p:red>{{ .Working.String }}</>{{ end }}",
+          "type": "git",
+          "style": "plain"
         }
       ],
-      "type": "prompt"
+      "newline": true
     },
     {
+      "type": "prompt",
       "alignment": "left",
-      "newline": true,
       "segments": [
         {
-          "foreground": "p:orange",
-          "style": "plain",
+          "properties": {
+            "cache_duration": "none"
+          },
           "template": "\ue3bf ",
-          "type": "root"
+          "foreground": "p:orange",
+          "type": "root",
+          "style": "plain"
         },
         {
+          "properties": {
+            "cache_duration": "none"
+          },
+          "template": "❯",
           "foreground": "p:dark_blue",
-          "style": "plain",
-          "template": "\u276f",
-          "type": "text"
+          "type": "text",
+          "style": "plain"
         }
       ],
-      "type": "prompt"
+      "newline": true
     }
   ],
-  "final_space": true,
-  "version": 2
+  "version": 3,
+  "final_space": true
 }

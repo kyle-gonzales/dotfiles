@@ -1,8 +1,8 @@
 f"""
 {{ if or (.Working.Changed) (.Staging.Changed) (gt .StashCount 0) }}
-    <p:magenta>{{ .UpstreamIcon }}{{ .HEAD }}</>
+    <p:magenta>{{ .UpstreamIcon }} {{ .HEAD }}</>
 {{ else }}
-    <p:green>{{ .UpstreamIcon }}{{ .HEAD }}</>
+    <p:green>{{ .UpstreamIcon }} {{ .HEAD }}</>
 {{ end }}
 
 {{ if (gt .Ahead 0)}}
@@ -14,15 +14,15 @@ f"""
 {{ end }}
 
 {{ if (gt .StashCount 0)}}
-     <p:pink> *{{ .StashCount }}</>
+    <p:pink> *{{ .StashCount }}</>
 {{ end }}
 
 {{ if .Staging.Changed }}
-     <p:green>{{ .Staging.String }}</>
+    <p:green>{{ .Staging.String }}</>
 {{ end }}
 
 {{ if .Working.Changed }}
-     <p:red>{{ .Working.String }}</>
+    <p:red>{{ .Working.String }}</>
 {{ end }}
 
 """
